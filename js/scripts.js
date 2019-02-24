@@ -1,4 +1,8 @@
-// Everything OK?
 console.log('OK');
 
-// Your Awesome Scripts
+// Click Event
+$('h1').click( function(){
+  
+  alert('OK');
+  
+});

@@ -1,12 +1,80 @@
-/*
-  DIAGNOSTIC STYLING
-*/
-body {
-  background: gray;
+/* External styling from: https://codepen.io/manikoth/pen/NNNBYe.css
+ */
+/* Doodle Stage */
+
+
+
+#stage {
+  /* Fixed Sizes   */
+  height: 400px;
+  width: 600px;
+
+  position: relative;
+
 }
 
-* {
-  outline: 1px dotted black;
+/* FIRST */
+h1 {
+  position: absolute;
+  
+  left: -110px;
+  top: 0;
+  
+ 
 }
 
-/* Your Awesome Scripts */
+/* LAST */
+#stage:hover h1 {
+    left: 0;
+}
+
+svg{
+  align-items: center;
+  height: 500px;
+  width: 600px;
+}
+
+
+#cloud
+ { animation:animation-name rollIn;
+  animation-duration: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+
+/*    https://daneden.github.io/animate.css/   */
+
+
+@-webkit-keyframes  rollIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes rollIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.rollIn {
+  -webkit-animation-name: rollIn;
+  animation-name: rollIn;
+} 
+  

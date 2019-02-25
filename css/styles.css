@@ -35,46 +35,17 @@ svg{
 }
 
 
-#cloud
- { animation:animation-name rollIn;
-  animation-duration: infinite;
-  animation-timing-function: ease-in-out;
-}
 
-
-/*    https://daneden.github.io/animate.css/   */
-
-
-@-webkit-keyframes  rollIn {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
-    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes rollIn {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
-    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.rollIn {
-  -webkit-animation-name: rollIn;
-  animation-name: rollIn;
-} 
+  /* clouds */
+  .clouds {
+    position: absolute;
+    bottom:100px;
+    left:425px;
   
+}
+.clouds:hover {
+  animation:slideOutLeft 8s;
+}
+
+
+

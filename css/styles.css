@@ -1,51 +1,29 @@
+
 /* External styling from: https://codepen.io/manikoth/pen/NNNBYe.css
  */
 /* Doodle Stage */
 
+/* KEY FRAMES */ 
+@keyframes offset {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
 
-
-#stage {
-  /* Fixed Sizes   */
-  height: 400px;
+/* SVG STYLES */
+.skyline{
+  height: 300px;
   width: 600px;
-
-  position: relative;
-
-}
-
-/* FIRST */
-h1 {
-  position: absolute;
+  stroke:#070808;
+  stroke-width:2;
+  stroke-dasharray: 750;
+  stroke-dashoffset: 750; 
+  animation: offset 6s linear forwards;}
   
-  left: -110px;
-  top: 0;
   
- 
-}
-
-/* LAST */
-#stage:hover h1 {
-    left: 0;
-}
-
-svg{
-  align-items: center;
-  height: 500px;
-  width: 600px;
-}
-
-
-
-  /* clouds */
-  .clouds {
-    position: absolute;
-    bottom:100px;
-    left:425px;
   
+.google  {
+  text-align: center;
+  font-family: sans-serif; 
+  font-size: 72;
 }
-.clouds:hover {
-  animation:slideOutLeft 8s;
-}
-
-
-

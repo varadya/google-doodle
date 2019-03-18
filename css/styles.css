@@ -18,12 +18,8 @@
   stroke-width:2;
   stroke-dasharray: 750;
   stroke-dashoffset: 750; 
-  animation: offset 6s linear forwards;}
-  
-  
-  
-.google  {
-  text-align: center;
-  font-family: sans-serif; 
-  font-size: 84;
+  animation: offset 6s linear forwards;
 }
+  
+  
+  
